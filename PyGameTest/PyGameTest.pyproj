@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>5e5adb79-e0bf-49e9-9619-bd4522b9ae22</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PyGameTest.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,21 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PyGameTest.py" />
+    <Compile Include="main.py" />
+    <Compile Include="entities.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="thumbnails.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\enemy.png" />
+    <Content Include="images\player.png" />
+    <Content Include="images\selectedCircle.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
